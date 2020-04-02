@@ -12,6 +12,7 @@ box-sizing: border-box;
 .navflex{
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
 }
 
 .stilenav li{
@@ -22,17 +23,27 @@ box-sizing: border-box;
 
 .stilenav li a{
   text-decoration: none;
+  color: grey;
+  font-size: 20px;
+}
+
+.stilenav li a:hover{
+color: black;
 }
 
 .sottomenu{
   display: none;
   position: absolute;
-  top: 20px;
+  top: 30px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px lightgrey;
+  padding: 18px;
 }
 
 .sottomenu li{
   display: block;
-  padding: 10px 0;
+  padding: 14px 0;
 }
 
 .hamburger-menu{
@@ -54,10 +65,18 @@ box-sizing: border-box;
   width: 100vw;
   height: 100vh;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
 }
 
 .stile-hamburger-menu{
-margin-top: 100px;
+}
+
+.dropdown-hamburger{
+  padding-top: 10px;
+
 }
 
 .stile-hamburger-menu li{
@@ -69,19 +88,11 @@ margin-top: 100px;
   text-decoration: none;
 }
 
-.sottomenu-hamburger{
-  z-index: 9999;
-}
-
-.sottomenu-hamburger li{
-  display: block;
-  padding: 10px 0;
-}
-
 .fa-angle-down, .fa-times{
   position: absolute;
   right: 10px;
   color: grey;
+  cursor: pointer;
 }
 
 .fa-times{
@@ -89,6 +100,22 @@ margin-top: 100px;
   cursor: pointer;
 }
 
+
+#getapp{
+  background-color: rgb(235, 0, 141);
+  padding: 10px 14px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#revo{
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
 /* media query per menu hamburger */
 
 

@@ -7,7 +7,6 @@
 $(document).ready(function(){
 // faccio sparire i dropdown menu
   $('.sottomenu').hide();
-
   $('.stilenav li a').click(
     function(){
       // faccio apparire i sottomenu uno alla volta
@@ -31,15 +30,15 @@ $(document).ready(function(){
 
     }
   )
-/////////////////////////////////
-  $('.sottomenu-hamburger').hide();
 
-  $('.sottomenu-hamburger li').click(
+  $('.dropdown-hamburger').hide();
+  $('.stile-hamburger-menu li a').click(
     function(){
-      $('.sottomenu-hamburger').toggle();
+      $(this).siblings('.dropdown-hamburger').toggle();
 
     }
   )
+
 
 
 });
