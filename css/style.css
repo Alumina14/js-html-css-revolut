@@ -1,0 +1,127 @@
+/**/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#wrapper{
+  margin: 0 120px;
+}
+
+.navflex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.stilenav li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.stilenav li a{
+  text-decoration: none;
+}
+
+.sottomenu{
+  display: none;
+  position: absolute;
+  top: 20px;
+}
+
+.sottomenu li{
+  display: block;
+  padding: 10px 0;
+}
+
+.hamburger-menu{
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu div{
+ width: 20px;
+ height: 3px;
+ background-color: black;
+ margin: 6px 0;
+ position: absolute;
+ top: 10px;
+ right: 120px;
+}
+
+.hamburger-menu-contenuto{
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.stile-hamburger-menu{
+margin-top: 100px;
+}
+
+.stile-hamburger-menu li{
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.stile-hamburger-menu li a{
+  text-decoration: none;
+}
+
+.sottomenu-hamburger{
+  z-index: 9999;
+}
+
+.sottomenu-hamburger li{
+  display: block;
+  padding: 10px 0;
+}
+
+.fa-angle-down, .fa-times{
+  position: absolute;
+  right: 10px;
+  color: grey;
+}
+
+.fa-times{
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* media query per menu hamburger */
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* il menu va in modalita responsive a 992px */
+
+@media only screen and (max-width: 992px) {
+  .hamburger-menu{
+    cursor: pointer;
+    display: block;
+  }
+.stilenav li a {
+  display: none;
+}
+#getapp{
+  display: none;
+}
+.hamburger-menu-contenuto{
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    background-color: yellow;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: pink;
+  }
+}
