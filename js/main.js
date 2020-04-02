@@ -20,14 +20,14 @@ $(document).ready(function(){
   $('.hamburger-menu').click(
     function(){
       $('.hamburger-menu-contenuto').toggle();
-
+      $('.navflex').hide();
     }
   )
 // faccio sparire la nav con click sulla x
   $('.fa-times').click(
     function(){
       $('.hamburger-menu-contenuto').hide();
-
+      $('.navflex').toggle();
     }
   )
 
