@@ -15,6 +15,7 @@ $(document).ready(function(){
     }
   )
 
+
   $('.hamburger-menu-contenuto').hide();
 
   $('.hamburger-menu').click(
@@ -35,7 +36,7 @@ $(document).ready(function(){
   $('.stile-hamburger-menu li a').click(
     function(){
       $(this).siblings('.dropdown-hamburger').toggle();
-
+      
     }
   )
 
